@@ -1,0 +1,10 @@
+// Εmotion must be the first plugin in your babel config plugins list.
+// If you are using Babel’s env option emotion must also be first for each environment.
+
+
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    ["@emotion", { "sourceMap": true, "autoLabel": "always" }]
+  ]
+}
