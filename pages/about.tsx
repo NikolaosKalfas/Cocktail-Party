@@ -1,3 +1,9 @@
-const About = (props) => <div>About</div>;
-About.layout = "secondary";
+// Example page
+const About = () => {
+  return (
+    <div>About</div>
+  )
+};
+
+About.layout = 'secondary';
 export default About;

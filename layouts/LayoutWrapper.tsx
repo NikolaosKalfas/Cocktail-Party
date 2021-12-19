@@ -11,14 +11,16 @@ const layouts: Layouts = {
   secondary: SecondaryLayout
 };
 
-const LayoutWrapper = (props) => {
-  const Layout = layouts[props.children.type.layout];
+const LayoutWrapper = ({children}) => {
+  // Creating the property 'layout' of type where we will assign on each page its value (secondary, tertiary, etc)
+  const layout:string = children.type.layout
+  const Layout = layouts[layout];
 
-  if (Layout != null) {
-    return <Layout {...props}>{props.children}</Layout>;
+  if (Layout !== (null || undefined)) {
+    return <Layout>{children}</Layout>;
   }
 
-  return <PrimaryLayout {...props}>{props.children}</PrimaryLayout>;
+  return <PrimaryLayout>{children}</PrimaryLayout>;
 };
 
 export default LayoutWrapper;
