@@ -1,5 +1,5 @@
 import Button from "./buttonPrimary.style";
-
+import Link from "next/link";
 import React from 'react'
 
 interface Buttons {
@@ -9,9 +9,11 @@ interface Buttons {
 
 const ButtonPrimary = ({ text, href }:Buttons) => {
   return (
-    <Button href={href}>
-      {text}
-    </Button>
+    <Link href={href} passHref>
+      <Button href={href}>
+        {text}
+      </Button>
+    </Link>
   )
 }
 

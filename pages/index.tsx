@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 import Title from './index.style'
 
 //test
-import Link from 'next/link'
 import ButtonPrimary from '../components/Button/ButtonPrimary'
 
 export default function Home() {
@@ -16,13 +15,9 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!!!</a>
         </Title>
         
-        <Link href="/about" passHref>
-          <ButtonPrimary text='Button'/>
-        </Link>
+          <ButtonPrimary href="/about" text='Button'/>
+          <ButtonPrimary href="/" text='See more'/>
 
-        <Link href="/" passHref>
-          <ButtonPrimary text='See more'/>
-        </Link>
 
         <p className={styles.description}>
           Get started by editing{' '}
