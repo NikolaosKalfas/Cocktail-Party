@@ -17,7 +17,9 @@ const LayoutWrapper = ({children}) => {
   const Layout = layouts[layout];
 
   if (Layout !== (null || undefined)) {
-    return <Layout>{children}</Layout>;
+    return (
+        <Layout>{children}</Layout>
+    )
   }
 
   return <PrimaryLayout>{children}</PrimaryLayout>;
