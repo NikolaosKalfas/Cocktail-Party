@@ -5,7 +5,6 @@ const Title = styled('h1')({
   margin: '0',
   lineHeight: '1.15',
   fontSize: '4rem',
-  fontFamily: "Varela Round, sans-serif;",
   'a': {
     color: '#0070f3',
     textDecoration: 'none',
