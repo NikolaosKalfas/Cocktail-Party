@@ -1,4 +1,4 @@
-import Meta from '../components/Meta'
+import Meta from '../components/Meta/Meta'
 
 const SecondaryLayout = ({children} : { children: React.ReactNode}) => {
   return (
